@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>{{ site.title }}</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation-bar">
+            <h2>CSS Variables</h2>
+            <ul class="main-menu">
+                {% assign sorted_pages = site.pages | sort:"task" %}
+                {% for page in sorted_pages %}
+                    {% if page.title %}
+                    <li><a href="{{page.url}}">{{page.title}}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        {% if page.title %}
+        <h1>{{page.title}}</h1>
+        {% endif %}
+        {{content}}
+    </main>
+    <footer class="site-footer">
+        <p>Simple footer All rights reserved &copy;</p>
+    </footer>
+</body>
+</html>

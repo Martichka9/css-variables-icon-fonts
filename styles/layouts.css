@@ -1,0 +1,114 @@
+.task-heading {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+/*Task 1 and 3 articles*/
+.task-article {
+    width: 30%;
+    min-width: 300px;
+    max-width: 900px; 
+    border: 15px solid #fff;
+    display: grid;
+    height: 225px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 7px 2px;
+    box-shadow: 5px 5px 10px #39325f;
+}
+
+.task-article h1, .task-article h2, .task-article h3, .task-article h4 {
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    font-size: var(--font-size-h1, 30px);
+}
+h3 {
+    font-size: var(--font-size-h3, 20px);
+}
+p {
+    font-size: var(--font-size-p, 16px);
+}
+
+/*Task 2 styles*/
+.task2-article {
+    border: 1px solid var(--yellow-color, #ffc701);
+    margin: 30px auto;
+    border-radius: 5px;
+    width: 80%;
+}
+.task2-article ul {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: var(--white-color, #fff);
+}
+.task2-item {
+    width: 30%;
+    min-width: 250px;
+    margin: 20px auto;
+    display: grid;
+    gap: 15px;
+    color: var(--primary-color, #275468);
+}
+.task2-item .more-link {
+    background-color: var(--yellow-color, #FFEB3B);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white-color, #fff);
+    display: block;
+    width: 47px;
+}
+.more-link:hover {
+    background-color: var(--primary-color, #275468);
+    color: var(--yellow-color, #FFEB3B);
+}
+/*TASK 4 Styles*/
+.home-prgrf, .home-heading, .task4-ul {
+    width: 95%;
+    max-width: 1024px;
+    margin: 10px auto;
+}
+.task4-ul {
+    list-style-type: disc;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+    .task-section {
+        justify-content: center;
+    }
+
+    .task-article {
+        width: 90%;
+        margin: 15px 0;
+        min-height: 150px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+        font-size: var(--screen-minW-500-fs, 14px);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    p {
+        font-size: var(--screen-minW-700-fs, 16px);
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    p {
+        font-size: var(--screen-minW-1600-fs, 18px);
+    }
+}

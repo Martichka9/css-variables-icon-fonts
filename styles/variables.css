@@ -1,0 +1,20 @@
+:root {
+    /*TASK 1 Variables*/
+    --font-size-h1: 30px;
+    --font-size-h3: 20px;
+    --font-size-p: 16px;
+
+    /*TASK 2 Variables*/
+    --primary-color: #275468;
+    --yellow-color: #FFC701;
+    --white-color: #ffffff;
+
+    /*TASK 3 Variables*/
+    --all-font-family: 'PT Sans';
+    --headings-font-family: 'PT Serif';
+
+    /*TASK 4 Variables*/
+    --screen-minW-500-fs: 14px;
+    --screen-minW-700-fs: 16px;
+    --screen-minW-1600-fs: 18px;
+}
